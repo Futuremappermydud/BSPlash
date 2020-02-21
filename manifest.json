@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/nike4613/ModSaber-MetadataFileSchema/master/Schema.json",
   "author": "Futuremappermydud",
   "dependsOn": {
-    "BeatSaberMarkupLanguage": "^1.1.3",
+    "BeatSaberMarkupLanguage": "^1.1.5",
     "BS Utils": "^1.4.1"
 
   },
