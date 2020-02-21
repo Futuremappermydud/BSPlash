@@ -1,0 +1,19 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/nike4613/ModSaber-MetadataFileSchema/master/Schema.json",
+  "author": "Futuremappermydud",
+  "dependsOn": {
+    "BeatSaberMarkupLanguage": "^1.1.3",
+    "BS Utils": "^1.4.1"
+
+  },
+  "description": "Adds a floating text screen that can be moved around. Displays your scoresaber stats as of right now",
+  "features": [],
+  "gameVersion": "1.7.0",
+  "id": "BSplash",
+  "links": {
+    "project-home": "https://github.com/Shoko84/FightSabers/blob/master/README.md",
+    "project-source": "https://github.com/Shoko84/FightSabers"
+  },
+  "name": "Bsplash",
+  "version": "0.3.3"
+}

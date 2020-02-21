@@ -1,0 +1,12 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+  <vertical spacing='-16'>
+  <horizontal spacing='1 '>
+    <button id='settings-btn' interactable='true' text='Settings' pref-width='30' pref-height='15' on-click='settings-page-act' />
+   
+    <button id='Other-btn' text='Other' pref-width='30' pref-height='15' on-click='Other-page-act' />
+
+  </horizontal>
+    
+  
+  </vertical>
+</bg>

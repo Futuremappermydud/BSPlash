@@ -1,0 +1,14 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd' id='main-background'>
+  <horizontal>
+     <vertical  pad-left='30' pad-top='30' pad-bottom='30'>
+      <raw-image id='textheader1' pref-height='25' pref-width='25' ></raw-image>
+    </vertical>
+    <vertical spacing='-15' bg='round-rect-panel' pad-left='30' pad-right='12' pad-top='-23'>
+      <horizontal bg='panel-top' pad-left='0' pad-right='15' horizontal-fit='PreferredSize'>
+        <text id='Header0' align='Center' font-size='8' />
+      </horizontal >
+      <text id='textheader2' ></text>
+    </vertical>
+    
+  </horizontal>
+</bg>

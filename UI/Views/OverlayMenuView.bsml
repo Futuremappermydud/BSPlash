@@ -1,0 +1,12 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'
+    id='main-background'>
+  <vertical spacing='0' bg='round-rect-panel' pad='5  '>
+
+    <horizontal bg='round-rect-panel' horizontal-fit='PreferredSize'  pad='2  '>
+      <text text='oof'></text>
+     
+    </horizontal>
+ 
+
+  </vertical>
+</bg>

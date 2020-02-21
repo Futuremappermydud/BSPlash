@@ -1,0 +1,17 @@
+<bg>
+  <vertical pad-bottom="40">
+  <scrollable-settings-container >
+    <horizontal bg='panel-top' pad-left='17' pad-right='17' horizontal-fit='PreferredSize'>
+      <text text='Settings' align='Center' font-size='8' pad-left='15' pad-right='15'/>
+    </horizontal>
+      <string-setting text='Text'  pref-height='35' value='text' pad-top='-25' bg='round-rect-panel'/>
+      <bool-setting bg='round-rect-panel' text='Text Background' pref-width='0' pref-height='35' value='bgyn' id='bgyn' pad-top='-45'/>
+  </scrollable-settings-container>
+  </vertical>
+  ﻿
+
+      <vertical pad-left='4' vertical-fit='PreferredSize'>
+        <button id='confirm-btn' text='Quit' on-click='confirm-btn-click'></button>
+      </vertical>
+
+</bg>
