@@ -154,7 +154,7 @@ namespace BSplash
         {
             return new StringBuilder(s)
                   .Replace("{", "{\n")
-                   .Replace(",", ",\n")
+                   .Replace("\",", ",\n")
                   // .Replace("", "")
                   .Replace("}", "\n}")
                   .ToString()
