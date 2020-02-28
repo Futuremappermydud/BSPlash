@@ -29,6 +29,7 @@ namespace BSplash
         public static Vector3 pos;
         public static Quaternion rot;
         public static string pp;
+        public static string Rank;
         public static string name = BS_Utils.Gameplay.GetUserInfo.GetUserName();
 
         static UI.FlowCoordinators.BSplashFlowCoordinator settingsFC;
@@ -142,7 +143,9 @@ namespace BSplash
             System.IO.File.WriteAllLines(@"C:\UserData\path.json", fil);
              pp = File.ReadLines(@"C:\UserData\path.json").Skip(3).Take(1).First();
             pp = Utils.GetNumbers(pp);
-            
+            //Rank = File.ReadLines(@"C:\UserData\path.json").Skip(3).Take(1).First();
+            //Rank = Utils.GetNumbers(Rank);
+
 
             return null;
         }
@@ -150,13 +153,14 @@ namespace BSplash
     }
     static public class Utils
     {
-        public static string Clean(this string s)
+        public static string Clean(this string s) // ,"countryrank
         {
             return new StringBuilder(s)
                   .Replace("{", "{\n")
                    .Replace("\",", ",\n")
-                  // .Replace("", "")
+                   //.Replace("\"", "")
                   .Replace("}", "\n}")
+                  //.Replace(",\"countryrank\"", ",\ncountryrank")
                   .ToString()
                   .ToLower();
         }

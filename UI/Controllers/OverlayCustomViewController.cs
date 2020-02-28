@@ -58,7 +58,7 @@ namespace BSplash.UI.Controllers
             scale[1] *= -1;
             img.transform.localScale = scale;
         }
-
+        
 
 
 
