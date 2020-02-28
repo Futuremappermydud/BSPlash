@@ -30,7 +30,10 @@ namespace BSplash
         public static Quaternion rot;
         public static string pp;
         public static string Rank;
+        public static bool Banned;
+        public static bool Inactive;
         public static string name = BS_Utils.Gameplay.GetUserInfo.GetUserName();
+        public static UserData O0f = new UserData(pp, Banned, Inactive);
 
         static UI.FlowCoordinators.BSplashFlowCoordinator settingsFC;
 
@@ -88,8 +91,8 @@ namespace BSplash
 
             floatingScreen.SetRootViewController(BeatSaberUI.CreateViewController<OverlayCustomViewController>(), true);
             floatingScreen.GetComponent<Image>().enabled = false;
+            O0f = new UserData(pp, Banned, Inactive);
 
-            
         }
 
 
@@ -110,6 +113,8 @@ namespace BSplash
             System.IO.File.WriteAllLines(@"C:\UserData\path.json", fil);
             pp = File.ReadLines(@"C:\UserData\path.json").Skip(3).Take(1).First();
             pp = Utils.GetNumbers(pp);
+            
+            
 
         }
 
@@ -125,7 +130,7 @@ namespace BSplash
         {
            
         }
-        string Main()
+        static public string Main()
         {
               
             
@@ -182,5 +187,16 @@ namespace BSplash
         }
 
     }
-        #endregion
+    #endregion
+    public class UserData {
+        public string PP;
+        public bool banned;
+        public bool inactive;
+        public UserData(string Pp, bool Banned, bool Inactive) {
+   
+         PP = Pp;
+         banned = Banned;
+         inactive = Inactive;
+    }
+    }
     }

@@ -25,8 +25,9 @@ namespace BSplash.UI.Controllers
         internal static IConfigProvider configProvider;
         public static string PPP = BSplash.Plugin.pp;
         public static string Name = BSplash.Plugin.name;
+        readonly UserData of = Plugin.O0f;
 
-        
+
 
         public static OverlayCustomViewController instance;
 
@@ -48,7 +49,8 @@ namespace BSplash.UI.Controllers
         protected override void DidActivate(bool firstActivation, ActivationType type)
         {
             base.DidActivate(firstActivation, type);
-            textComponent2.text = "pp:" + PPP;
+            
+            textComponent2.text = "pp:" + of.PP;
             textComponent2.fontSize = 10.2f;
             header0.text = Name;
             header0.fontSize = 11.0f;
